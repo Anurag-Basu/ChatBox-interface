@@ -1,0 +1,155 @@
+body {
+  background-color: lime;
+}
+
+.container {
+  background: #1a1d21;
+  padding: 0;
+  border-radius: 10px;
+}
+
+.heading {
+  border-right: 2px solid white;
+}
+
+.settings-tray {
+  background: #1a1d21;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+.search-box {
+  background: #1a1d21;
+  padding: 10px 14px;
+}
+
+.search-box .input-wrapper {
+  background: #383841;
+}
+
+.search-box i {
+  color: #1a1d21;
+  vertical-align: middle;
+  font-size: 25px;
+  position: relative;
+  left: 1.5rem;
+}
+
+input {
+  border: none;
+  padding: 5px;
+  width: 80%;
+  background: #383841;
+  padding-left: 1rem;
+}
+
+input::-webkit-input-placeholder {
+  color: grey;
+  font-weight: 600;
+}
+
+input:-ms-input-placeholder {
+  color: grey;
+  font-weight: 600;
+}
+
+input::-ms-input-placeholder {
+  color: grey;
+  font-weight: 600;
+}
+
+input::placeholder {
+  color: grey;
+  font-weight: 600;
+}
+
+input:focus {
+  outline: none;
+}
+
+.profile-image {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.friend-drower {
+  color: #fff;
+  padding: 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.friend-drower .text {
+  margin-left: 10px;
+  width: 95%;
+}
+
+.friend-drower h6 {
+  margin-top: 6px;
+  margin-bottom: 0;
+}
+
+.friend-drower .description {
+  font-size: 13px;
+}
+
+.friend-drower a {
+  text-decoration: none;
+}
+
+hr {
+  margin: 2px auto;
+  color: white;
+}
+
+.new-user {
+  color: white;
+  margin-bottom: 0px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.new-user .text {
+  margin-left: 10px;
+  font-weight: 900;
+}
+
+.new-user i {
+  vertical-align: middle;
+  margin-left: 6px;
+}
+
+.new-user .profile {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+}
+
+.profile-notification {
+  height: 35px;
+  width: auto;
+  background: red;
+}
+
+.red {
+  background: red;
+  border: 2px;
+  margin-top: -2px;
+}
+
+.new-messages-alert {
+  color: white;
+  background: red;
+  position: relative;
+}
+
+footer .emoji-cont i {
+  color: white;
+  font-size: 20px;
+  margin-left: 10px;
+}
+/*# sourceMappingURL=style.css.map */

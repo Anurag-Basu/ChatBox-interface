@@ -1,0 +1,142 @@
+$dark: #1a1d21;
+$grey: #383841;
+
+body {
+  background-color: lime;
+}
+.container {
+  // margin: 60px auto;
+  background: $dark;
+  padding: 0;
+  border-radius: 10px;
+}
+
+.heading {
+  border-right: 2px solid white;
+}
+.settings-tray {
+  background: $dark;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+.search-box {
+  background: $dark;
+  padding: 10px 14px;
+  .input-wrapper {
+    background: $grey;
+  }
+
+  i {
+    color: $dark;
+    vertical-align: middle;
+    font-size: 25px;
+    position: relative;
+    left: 1.5rem;
+  }
+}
+
+input {
+  border: none;
+  padding: 5px;
+  width: 80%;
+  background: $grey;
+  padding-left: 1rem;
+
+  &::placeholder {
+    color: grey;
+    font-weight: 600;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+.profile-image {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.friend-drower {
+  color: #fff;
+  padding: 0 15px;
+  display: flex;
+  transition: 0.3s ease;
+  .text {
+    margin-left: 10px;
+    width: 95%;
+  }
+
+  h6 {
+    margin-top: 6px;
+    margin-bottom: 0;
+  }
+  .description {
+    font-size: 13px;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+
+hr {
+  margin: 2px auto;
+  color: white;
+}
+
+.new-user {
+  color: white;
+  margin-bottom: 0px;
+
+  .text {
+    margin-left: 10px;
+    font-weight: 900;
+  }
+
+  i {
+    vertical-align: middle;
+    margin-left: 6px;
+  }
+
+  .profile {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+  }
+
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.profile-notification {
+  height: 35px;
+  width: auto;
+  background: red;
+}
+
+.red {
+  background: red;
+  border: 2px;
+  margin-top: -2px;
+}
+
+.new-messages-alert {
+  color: white;
+  background: red;
+  position: relative;
+}
+
+footer {
+ 
+  .emoji-cont {
+    
+    
+    
+    i {
+      color: white;
+      font-size: 20px;
+      margin-left: 10px;
+    }
+  }
+}
