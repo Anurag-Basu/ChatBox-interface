@@ -1,11 +1,15 @@
 $dark: #1a1d21;
 $grey: #383841;
 
-body {
-  background-color: lime;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-.container {
+
+.container-fluid {
   // margin: 60px auto;
+  height: 100vh;
   background: $dark;
   padding: 0;
   border-radius: 10px;
@@ -41,6 +45,7 @@ input {
   padding: 5px;
   width: 80%;
   background: $grey;
+  border-radius: 10px;
   padding-left: 1rem;
 
   &::placeholder {
@@ -59,6 +64,7 @@ input {
 }
 
 .friend-drower {
+  position: relative;
   color: #fff;
   padding: 0 15px;
   display: flex;
@@ -74,10 +80,32 @@ input {
   }
   .description {
     font-size: 13px;
+    vertical-align: center;
+    margin-right: 10px;
   }
   a {
     text-decoration: none;
   }
+
+  &.chat {
+    &:hover {
+      background-color: darkslategray;
+      .friend-drower-action-container {
+        display: block;
+      }
+    }
+    .friend-drower-action-container {
+      padding: 4px 8px;
+      border-radius: 4px;
+      background-color: black;
+      position: absolute;
+      right: 10px;
+      top: -16px;
+      display: none;
+    }
+  }
+  
+  
 }
 
 hr {
@@ -85,9 +113,9 @@ hr {
   color: white;
 }
 
+
 .new-user {
   color: white;
-  margin-bottom: 0px;
 
   .text {
     margin-left: 10px;
@@ -99,20 +127,18 @@ hr {
     margin-left: 6px;
   }
 
-  .profile {
+  .profile-notification {
     height: 35px;
-    width: 35px;
-    border-radius: 50%;
+    margin-right: 15px;
+    width: auto;
+
+    .profile {
+      height: 35px;
+      width: 35px;
+      margin-right: -15px;
+      border-radius: 50%;
+    }
   }
-
-  padding-bottom: 0;
-  margin-bottom: 0;
-}
-
-.profile-notification {
-  height: 35px;
-  width: auto;
-  background: red;
 }
 
 .red {
@@ -124,19 +150,42 @@ hr {
 .new-messages-alert {
   color: white;
   background: red;
-  position: relative;
-}
+  right: 10px;
+  top: -12px;
+  border-radius: 5px;}
 
-footer {
- 
+footer.footer {
+  position: fixed;
+  bottom: 10px;
   .emoji-cont {
-    
-    
-    
     i {
       color: white;
       font-size: 20px;
       margin-left: 10px;
     }
   }
+}
+
+.faded-emoji {
+  i {
+    color: grey;
+    margin-left: 5px;
+  }
+}
+
+.time{
+  margin-left: 5px;
+  margin-top: 6px;
+
+}
+
+
+.today{
+  left: 50%;  
+  color: #fff;
+  background-color: black;
+  border: 2px solid white;
+  border-radius: 15px;
+  padding: 0px 19px;
+  z-index: 10;;
 }
