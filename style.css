@@ -29,10 +29,11 @@
 
 .search-box .input-wrapper {
   background: #383841;
+  border-radius: 10px;
 }
 
 .search-box i {
-  color: #1a1d21;
+  color: white;
   vertical-align: middle;
   font-size: 25px;
   position: relative;

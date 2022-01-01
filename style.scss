@@ -29,10 +29,11 @@ $grey: #383841;
   padding: 10px 14px;
   .input-wrapper {
     background: $grey;
+    border-radius: 10px;
   }
 
   i {
-    color: $dark;
+    color: white;
     vertical-align: middle;
     font-size: 25px;
     position: relative;
